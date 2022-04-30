@@ -28,6 +28,10 @@
 
 					<?php endwhile; ?>
 				<?php endif; ?>
+				<div class="paginacao">
+					<div><?php previous_posts_link('Página anterior') ?></div>
+					<div><?php next_posts_link('Proxima página') ?></div>
+				</div>
 			</div>
 		<?php get_sidebar(); ?>
 		</div>
