@@ -4,6 +4,10 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
+	
+}
+body{
+	background-color: rgba(0, 0, 0, .1);
 }
 .container{
 	max-width: 1200px;
@@ -41,22 +45,20 @@ header{
 }
 .main{
 	flex: 2;
-}
-aside{
-	width: 300px;
-	background-color: #222;
-	color: #fff;
 	padding: 10px;
 }
 .widget-container{
-	margin-top: 20px;
+	margin-top: 5px;
+	padding: 10px;
+	border: 1px solid #888;
+	border-radius: 0.5em;
+	background-color: #fff;
 }
 .widget-container ul li{
 	list-style: none;
-	margin-top: 10px;
 }
 .widget-container ul li a{
-	color: #f2f2f2;
+	color: #222;
 	text-decoration: none;
 	font-size: 12px;
 }
@@ -65,9 +67,8 @@ aside{
 
 }
 .widget-title{
-	color: #fff;
-	border-top: 1px solid #333;
-	border-bottom: 1px solid #333;
+	color: #333;
+	border-bottom: 1px solid #888;
 }
 
 .search-form{
@@ -75,10 +76,11 @@ aside{
 	margin-bottom: 10px;
 }
 .search-form input[type=search]{
-	border: 1px solid #222;
+	border: 1px solid #888;
 	padding: 10px;
 	border-top-left-radius: 0.5em;
 	border-bottom-left-radius: 0.5em;
+	
 }
 .search-form input:focus {
 	border: 1px solid #222;
@@ -96,4 +98,39 @@ aside{
 .search-form input[type=submit]:hover{
 	background-color: #333;
 	font-weight: bolder;
+}
+
+
+.section-1{
+	display: flex;
+}
+.content-1-1{
+	flex: 2;
+}
+.content-1-1 article{
+	display: flex;
+	
+	background-color: #fff;
+	margin-bottom: 20px;
+	padding: 10px;
+	border-radius: 0.5em;
+	margin-right: 20px;
+	box-shadow: 0em 0.5em .2em 0.2em rgba(0, 0, 0, .2);
+}
+.article-content{
+	margin-left: 10px;
+}
+.article-content h5{
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+.article-content h5 a{
+	color: #333;
+	text-decoration: none;
+}
+.article-content p{
+	padding-bottom: 10px;
+}
+aside{
+	flex: 1;	
 }
